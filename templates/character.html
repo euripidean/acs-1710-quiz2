@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Your Character
+{% endblock %}
+{% block content %}
+    {% if status == 200 %}
+        <h2>Your character is <span class="highlight">{{name}}</span>! </h2>
+        <section class="stats">
+        <p>Here are their vital statistics:</p>
+        <ul>
+            <li>Height: {{height}}cm</li>
+            <li>Mass: {{mass}}kg</li>
+            <li>Hair Colour: {{hair}}</li>
+            <li>Eye Colour: {{eyes}}</li>
+            <li>Homeworld: <span class="highlight">{{homeworld[0]}}</span> (Population: {{homeworld[1]}})</li>
+        </ul>
+        <h2>Films featuring {{name}}:</h2>
+        <ul id="films">
+        {% for film in films %}
+        <li>&#127916 {{film}}</li>
+        {% endfor %}
+        </ul>
+    </section>
+    {% else %}
+        <p>Unfortunately, that's not a valid option.</p>
+        <form action="/">
+            <input type="submit" id="button" value="Try Another Character"/>
+        </form>
+    {% endif %}
+{% endblock %}
+

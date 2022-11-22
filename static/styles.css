@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    background-image: url(images/stars.png);
+    background-color: #000;
+    color: #FFE81F;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 32px;
+}
+
+main {
+    max-width:1000px;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.65em;
+    padding: 20px 50px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    }
+
+nav a {
+    border-bottom: 1px solid #FFE81F;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #FFE81F;
+}
+
+nav a:hover, nav a:focus {
+    color: #fff;
+}
+
+nav a:visited {
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tm {
+    font-size: 0.5em;
+    vertical-align: super;
+    margin-right: 5px;
+}
+
+.search p {
+    font-size: 18pt;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border: 2px solid #FFE81F;
+    max-width: 75%;
+    margin:auto;
+}
+
+.search form label {
+    padding-bottom: 10px;
+}
+
+#input-box {
+    border:none;
+    padding: 3%;
+    font-size: 1em;
+}
+
+#button {
+    border: none;
+    border-radius: 4px;
+    padding: 3%;
+    margin-top: 10px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.6em;
+    background-color: #FFE81F;
+    text-transform: uppercase;
+}
+
+#button:hover {
+    border: 1px solid #FFE81F;
+    background-color: #000;
+    color:#FFE81F;
+}
+
+.stats {
+    font-weight: 300;
+}
+
+.highlight {
+    color: #fff;
+}
+
+#films {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 150px;
+}
+
+footer p {
+    padding: 5%;
+    font-size: 0.6em;
+}
+

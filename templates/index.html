@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% extends 'base.html' %}
+{% block title %}
+Far Far AWay
+{% endblock %}
+
+{% block content %}
+
+        
+            <section class="search">
+            <h2>Explore the characters of Star Wars<span class="tm">&#8482</span>!</h2>
+            <p>Star Wars covers a vast universe (literally). Learn more about the characters of the films, from Tatooine to Endor!</p>
+            <p>Simply enter a number below and we'll tell you all about a character from the series.</p>
+            <form action="/character" method="POST">
+                <label for="character-id">Enter a number:</label>
+                <input type="number" id="input-box" name="character-id" min="0">
+                
+                <input type="submit" id="button" value="Get Character!">
+            </form>
+            </section>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+{% endblock %}

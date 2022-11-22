@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href={{ url_for('static',filename='styles.css') }}>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <li><a href="starwars.com" target="_blank">Star Wars Official Site</a></li>
+                <li><a href="https://swapi.py4e.com/documentation" target="_blank">Swapi Documentation</a></li>
+                <li><a href="mailto:jane.harrison@students.dominican.edu">Contact</a></li>
+            </nav>
+            <h1>Star Wars<span class="tm">&#8482</span>: A New API</h1>
+        </header>
+        <main>
+    {% block content %}{% endblock %}
+        </main>
+    </body>
+    <footer>
+        <p>Jane Harrison, 2022.</p>
+    </footer>
+</html>
